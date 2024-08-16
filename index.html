@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Music App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">&#128269;</button> <!-- Search Icon -->
+        </div>
+
+        <!-- Player Controls -->
+        <div class="player-controls">
+            <div class="track-info">
+                <span class="time"> </span>
+                <span class="controls">
+                    <button class="play">&#9654;</button>
+                    <button class="pause">&#9646;&#9646;</button>
+                    <button class="previous">&#9198;</button>
+                    <input type="range" id="seekBar" value="0" max="100">
+                    <button class="next">&#9197;</button>
+                </span>
+                <span class="track-name"> track name </span>
+            </div>
+            <div class="additional-controls">
+                <button>&#9835;</button>
+                <button class="notify">&#128276;</button>
+                <button>&#128153;</button>
+                <button>&#128166;</button>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="friends">
+                <div class="friend"></div>
+                <div class="friend"></div>
+                <div class="friend"></div>
+                <div class="friend"></div>
+                <div class="friend"></div>
+                <div class="friend"></div>
+            </div>
+            <div class="tracklists">
+                <button class="tracklist-btn">ADD NEW...</button>
+                <button class="tracklist-btn">MY FAVOR</button>
+                <button class="tracklist-btn">ELECTRONIC MUSIC</button>
+                <button class="tracklist-btn">TECHNO</button>
+                <button class="tracklist-btn">COOL VOCAL</button>
+                <button class="tracklist-btn">LOREM</button>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>

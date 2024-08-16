@@ -1,0 +1,22 @@
+<script>
+    let showNotification = (title,body,icon) => {
+
+        if ("Notification" in window) {
+            console.log(Notification.permission);
+            if (Notification.permission == "granted") {
+                new Notification(title, { body: body, icon: icon });
+            } else {
+                Notification.requestPermission().then(function (permission) {
+                    if (permission == "granted") {
+                        new Notification(title, { body: body, icon: icon });
+                    }
+                })
+            }
+        } else {
+            alert("Browser does not support notifications")
+        }
+
+    }
+
+    showNotification('title 1','body1',"Songs/icon.png");
+</script>
